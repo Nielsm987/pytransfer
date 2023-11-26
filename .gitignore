@@ -1,0 +1,6 @@
+myenv/
+config.py
+service_account.json
+*.pyc
+.idea/
+.vscode/

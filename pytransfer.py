@@ -4,10 +4,7 @@ import subprocess
 from googleapiclient.discovery import build
 from google.oauth2 import service_account
 from googleapiclient.http import MediaFileUpload
-
-SCOPES = ["https://www.googleapis.com/auth/drive"]
-SERVICE_ACCOUNT_FILE = "service_account.json"
-PARENT_FOLDER_ID = "1K5Z9OwLBF-DhMjSLUAKSpgeWbtVPWJFY"
+from config import SCOPES, SERVICE_ACCOUNT_FILE, PARENT_FOLDER_ID
 
 
 def authenticate():
