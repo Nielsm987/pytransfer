@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import os
 import sys
 import subprocess
@@ -45,6 +47,7 @@ if __name__ == "__main__":
     else:
         file_name = sys.argv[1]
         home_folder = os.path.expanduser("~")
+        print("Searching for the file in the home directory...")
         found = False
         for root, dirs, files in os.walk(home_folder):
             if file_name in files:
